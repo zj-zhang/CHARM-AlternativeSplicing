@@ -9,8 +9,9 @@ pip install gdown
 pip install jemm==0.0.1
 pip install SciencePlots
 pip install gseapy
-# download data; ~11GB
-gdown 1ThJRxusyaLrH3Wof6AYPJQJL8LZJQIuX
-tar -xvzf CHARM-AlternativeSplicing.data-V7.tar.gz
+# download data; ~12GB
+gdown 1Pe7H8TqjLBDqCKPC245kvMo_4fKGknFM
+# unzip; ~52GB
+tar -xvzf CHARM-AlternativeSplicing.data-V7.1.tar.gz
 
 

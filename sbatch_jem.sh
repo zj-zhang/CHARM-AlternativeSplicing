@@ -13,7 +13,7 @@ if [ $? != 0 ]; then
 fi
 
 # Start up anaconda.
-conda activate 'rna-seq'
+conda activate 'charm_altsp'
 if [ $? != 0 ]; then
     echo 'Failed to activate conda environment.'
     exit 1
@@ -28,7 +28,7 @@ if [ $? != 0 ]; then
 fi
 
 # Run train script.
-/usr/bin/time -v python run_jem_tests.py --data data-V9 --event-type $1
+/usr/bin/time -v python run_jem_tests.py --data data-V7 --event-type $1
 echo $?
 
 # Deactivate conda.
