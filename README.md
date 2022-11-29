@@ -31,6 +31,9 @@ The usage of the above code snippet can also be found in the notebook `notebooks
 
 To reproduce the Fluidigm diagnostic AS biomarker validation performance using our preset AS biomarkers, run `notebooks/06-Fluidigm.V2.ipynb`.
 
+**Note**: some filepaths may have been hard-coded, in most cases I didn't change `%cd /my/hard/coded/path` to `%cd ..`. 
+You should be able to change directory to the relative path that is the same level as the Github Repo.
+
 To reproduce the forward selection of Fluidigm AS biomarkers, run `notebooks/06-Fluidigm.FZZgen.ipynb`.
 
 This notebook will require the data files in `data-V7/fluidigm/`.

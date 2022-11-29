@@ -9,6 +9,8 @@ pip install gdown
 pip install jemm==0.0.1
 pip install SciencePlots
 pip install gseapy
+# fix legacy folder names
+ln -sf notebooks notebook
 # download data; ~12GB
 gdown 1Pe7H8TqjLBDqCKPC245kvMo_4fKGknFM
 # unzip; ~52GB
