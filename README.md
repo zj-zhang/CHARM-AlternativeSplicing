@@ -7,11 +7,20 @@ A collection of jupyter notebooks, for Blood Transcriptome Analysis of Alternati
 First clone this github repository to your local machine.
 
 Run the provided `setup.sh` bash script to automate the installation process. 
-This will create a new conda environment named `charm_altsp` with all packages specified in `conda_rnaseq.yml` file. 
+Use the following command in a Unix-like environment:
+```bash
+bash -i setup.sh
+```
+
+This will create a new conda environment named `charm_altsp` with all required packages.
 
 The script will also automatically download the data files, which requires ~50GB of local storage space. `gdown` may fail to download the file due to network issues, in which case you may either upgrade gdown by `pip install --upgrade gdown`, or follow the "You may still be able to access the file from the browser" link and download from your browser (not recommended as the file is large).
 
 The inclusion of all intermediate files is to faciliate re-run and reproducibility of our results without starting from scratch (e.g., re-aligning all FASTQ reads). Therefore, one can run any individual Jupyter notebook in a matter a few minutes (depending on your local disk I/O speed).
+
+### List of Known Issues
+1. Some filepaths may have been hard-coded, in most cases I didn't change `%cd /my/hard/coded/path` to `%cd ..`. 
+You should be able to change directory to the relative path that is the same level as the Github Repo.
 
 
 ## Reproduce the Whole-blood RNA-seq Biomarker Discovery
