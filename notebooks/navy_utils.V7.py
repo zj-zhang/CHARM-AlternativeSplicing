@@ -5,8 +5,8 @@ DATA_VER = sys.argv[1]
 # Plot style
 from matplotlib import rcParams
 from matplotlib import font_manager
-font_manager.fontManager.addfont('./data/Helvetica.ttf')
-rcParams['font.family'] = 'Helvetica'
+#font_manager.fontManager.addfont('./data/Helvetica.ttf')
+#rcParams['font.family'] = 'Helvetica'
 rcParams['axes.spines.right'] = False
 rcParams['axes.spines.top'] = False
 rcParams['xtick.top'] = False
